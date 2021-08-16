@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Bulb</title>
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        .container {
+
+            /* border: 4px solid blue; */
+            height: 100vh;
+            box-shadow: -1px -3px 24px white;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        .container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn {
+            align-items: center;
+            position: relative;
+            width: 200px;
+            margin: -51px -11px;
+            /* border:2px solid blue; */
+            padding: 10px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            font-family: cursive;
+            transition: all 1s ease-in-out;
+            text-shadow: 2px 1px 5px white;
+        }
+
+        .btn:hover {
+            background-color: white;
+            font-size: 20px;
+            color: black;
+
+
+        }
+        .container h1
+        {
+            position: relative;
+            margin:-550px 0px;
+            color:white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function light(value) {
+            var pic;
+            if (value == 0) {
+                pic = "off.jpg";
+            }
+            else {
+                pic = "on.png";
+            }
+            document.getElementById('bulb').src=pic;
+
+        }
+
+
+
+    </script>
+    <div class="container">
+        
+        <img id="bulb" src="off.jpg" alt="">
+        <button class="btn" onclick="light(1)">Turn On</button>
+        <button class="btn" onclick="light(0)">Turn Off</button>
+
+        <h1>Glowing bulb made using Html,Css and Javascript by @Akash</h1>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
